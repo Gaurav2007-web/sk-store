@@ -1,4 +1,5 @@
-﻿'use client';
+﻿$navCode = @'
+'use client';
 import Link from 'next/link';
 import { ShoppingBag } from 'lucide-react';
 
@@ -40,3 +41,6 @@ export default function Navbar({ cartCount, onOpenCart }: { cartCount: number; o
     </header>
   );
 }
+'@
+if (Test-Path "src\components\Navbar.tsx") { Set-Content -Path "src\components\Navbar.tsx" -Encoding UTF8 -Value $navCode }
+if (Test-Path "components\Navbar.tsx") { Set-Content -Path "components\Navbar.tsx" -Encoding UTF8 -Value $navCode }
