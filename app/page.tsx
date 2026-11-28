@@ -80,7 +80,7 @@ export default function HomePage() {
     const ownerWaPhone =
       rawOwnerPhone.length === 10
         ? `91${rawOwnerPhone}`
-        : rawOwnerPhone || '919999999999'; // Admin Settings mein apna number save karein
+        : rawOwnerPhone || '919170879234'; // Yahan dost ka 91 + 10-digit WhatsApp number dalein
 
     const message = `Namaste *SK Premium Superfoods*! 🙏\n\nMujhe yeh product order karna hai:\n• *Product:* ${product.name}${chosenVariant ? ` (${chosenVariant})` : ''}\n• *Price:* ₹${product.selling_price}\n\nKripya delivery details batayein.`;
 
@@ -180,7 +180,6 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Hero Banner */}
       <section className="bg-gradient-to-br from-slate-950 via-slate-900 to-emerald-950 text-white py-10 px-4">
         <div className="max-w-6xl mx-auto flex flex-col md:flex-row items-center justify-between gap-6">
           <div className="space-y-3 text-center md:text-left">
@@ -213,7 +212,6 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Category Filter */}
       {categories.length > 1 && (
         <div className="max-w-6xl mx-auto w-full px-4 pt-6 flex gap-2 overflow-x-auto pb-2">
           {categories.map((cat) => (
@@ -232,7 +230,6 @@ export default function HomePage() {
         </div>
       )}
 
-      {/* Product Grid */}
       <main className="max-w-6xl mx-auto w-full px-4 py-8 flex-1">
         {loading ? (
           <div className="text-center py-20 text-slate-500 text-sm">
@@ -347,7 +344,6 @@ export default function HomePage() {
         )}
       </main>
 
-      {/* Footer */}
       <footer className="bg-slate-950 text-slate-300 border-t border-slate-800 mt-12">
         <div className="max-w-6xl mx-auto px-4 py-10 grid sm:grid-cols-2 md:grid-cols-3 gap-8 text-xs">
           <div className="space-y-2.5">
@@ -392,7 +388,6 @@ export default function HomePage() {
         </div>
       </footer>
 
-      {/* Cart Drawer */}
       {isCartOpen && (
         <div className="fixed inset-0 z-50 bg-slate-950/60 backdrop-blur-xs flex justify-end">
           <div className="bg-white w-full max-w-md h-full flex flex-col shadow-2xl">
