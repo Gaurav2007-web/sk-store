@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 import { useState, useEffect } from 'react';
 import { supabase } from '@/lib/supabase';
 import Navbar from '@/components/Navbar';
@@ -80,7 +80,7 @@ export default function HomePage() {
     const ownerWaPhone =
       rawOwnerPhone.length === 10
         ? `91${rawOwnerPhone}`
-        : rawOwnerPhone || '919170879234'; // Yahan dost ka 91 + 10-digit WhatsApp number dalein
+        : rawOwnerPhone || '919170879234';
 
     const message = `Namaste *SK Premium Superfoods*! 🙏\n\nMujhe yeh product order karna hai:\n• *Product:* ${product.name}${chosenVariant ? ` (${chosenVariant})` : ''}\n• *Price:* ₹${product.selling_price}\n\nKripya delivery details batayein.`;
 
